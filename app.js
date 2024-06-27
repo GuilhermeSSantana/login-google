@@ -37,6 +37,7 @@ app.get('/profile', (req, res) => {
     return res.redirect('/');
   }
   res.send(`Olá, ${req.user.displayName}`);
+  console.log(req);
 });
 
 app.listen(3000, () => {
